@@ -1,7 +1,7 @@
 package com.api_customQueries02.api_customQueries02.Controllers;
 
 import com.api_customQueries02.api_customQueries02.Entities.Month;
-import com.api_customQueries02.api_customQueries02.Services.MonthService;
+import com.api_customQueries02.api_customQueries02.Services.MonthServices;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/month")
 public class MonthController {
     @Autowired
-    private MonthService monthService;
+    private MonthServices monthService;
 
     @GetMapping
     public Month getMonth(HttpServletRequest request) {
